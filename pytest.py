@@ -11,8 +11,8 @@ def ebcalc():
    if request.method == 'POST':
       units = int(request.form['units'])
       ebtype = request.form['ebtype']
-      if ebtype=="domestic":
-          amount=int(units*2)
+      if ebtype=="commercial":
+          amount=int(units*7)
           if units<=100:
             return "For your domestic EB type, Your amount is: "+str (amount)+". Less than 100 units and no need to pay. Thank you!"
           else:
